@@ -1,0 +1,63 @@
+@import '../../../styles/global';
+
+.second-label {
+  font-style: italic;
+  color: $grey-mid;
+}
+
+.textbox-style {
+  left: 0 !important;
+  height: 2.2em;
+  font-size: 1em;
+  padding: 0 2%;
+  margin-top: .3em;
+  margin-bottom: 1.5em;
+  box-shadow: none;
+}
+
+.textarea-style {
+  left: 0 !important;
+  height: 8em;
+  font-size: 1em;
+  border: 1px solid $grey !important;
+  padding: 1em 2%;
+  margin-top: .3em;
+  margin-bottom: 1.5em;
+}
+
+.input-disabled {
+  border-color: transparent !important;
+  height: 2.2em;
+  color: $black;
+
+  &:disabled {
+    background-color: transparent;
+    box-shadow: none;
+    color: $black;
+    padding-left: 0;
+    font-weight: 700;
+  }
+}
+
+label.serverErrorMsg {
+  font-size: 1em;
+  padding: .34em .5em;
+  background-color: $red;
+  color: $white;
+}
+
+select.serverError {
+  margin-right: .5em;
+}
+
+.serverError {
+  left: 0 !important;
+  border: 3px solid $red !important;
+}
+
+.serverErrorTextarea {
+  height: 4.5em;
+  border: 3px solid $red !important;
+  margin-bottom: 0;
+  width: 100%;
+}

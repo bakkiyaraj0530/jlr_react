@@ -1,0 +1,13 @@
+@import "../../styles/global";
+
+.offline-msg {
+  background: $red;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  text-align: center;
+  z-index: 100000000;
+  color: $white;
+}

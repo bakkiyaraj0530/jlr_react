@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 33.5 33.583" enable-background="new 0 0 33.5 33.583" xml:space="preserve">
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="16.903" cy="16.948" r="16"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-551.097" y="-474.052" width="1440" height="900"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+
+			<circle clip-path="url(#SVGID_4_)" fill="none" stroke="#A00028" stroke-width="2" stroke-miterlimit="10" cx="16.903" cy="16.948" r="16"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_5_" d="M21.881,24.909l-4.978-4.978l-4.978,4.978c-0.025,0.025-0.059,0.039-0.094,0.039
+			c-0.036,0-0.069-0.014-0.094-0.039l-2.795-2.795c-0.052-0.052-0.052-0.137,0-0.188l4.978-4.978L8.942,11.97
+			c-0.052-0.052-0.052-0.137,0-0.188l2.795-2.795c0.025-0.025,0.058-0.039,0.094-0.039c0.035,0,0.069,0.014,0.094,0.039l4.978,4.978
+			l4.978-4.978c0.024-0.025,0.059-0.039,0.094-0.039s0.069,0.014,0.094,0.039l2.795,2.795c0.051,0.052,0.051,0.137,0,0.188
+			l-4.979,4.978l4.979,4.978c0.051,0.052,0.051,0.137,0,0.188l-2.795,2.795c-0.025,0.025-0.059,0.039-0.094,0.039
+			S21.905,24.934,21.881,24.909z"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_6_)">
+		<defs>
+			<rect id="SVGID_7_" x="-551.097" y="-474.052" width="1440" height="900"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		<rect x="3.903" y="3.948" clip-path="url(#SVGID_8_)" fill="#A00028" width="26" height="26"/>
+	</g>
+</g>
+</svg>

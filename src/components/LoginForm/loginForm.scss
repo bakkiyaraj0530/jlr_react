@@ -1,0 +1,80 @@
+@import '../../styles/global';
+
+.alignLogin {
+  margin-top: 2em;
+}
+
+.login-form {
+  border-right: 0;
+  border-left: 0;
+
+  .logo {
+    text-align: center;
+    margin-top: 2em;
+    img {
+      width: 11em;
+    }
+  }
+  h2 {
+    margin: 2rem 0;
+    font-family: LR-light;
+    font-size: 2em;
+    color: $grey-mid;
+    font-weight: 100;
+  }
+
+  input,
+  input:focus,
+  input[type='password'] {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0);
+    font-size: $font-xsm;
+    padding: 7px 0;
+    border: none;
+    border-bottom: 1px dotted $grey-mid;
+    box-shadow: none;
+  }
+
+  .errorMessage {
+    color: $red;
+    height: 2em;
+  }
+  .requiredMsg {
+    height: 1.3em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-button {
+    margin-top: 1em;
+    padding: .4em 0;
+    font-family: LR-demi;
+    font-size: $font-md;
+    background: $black;
+  }
+
+  .form-button:focus {
+    outline: none;
+    box-shadow: 0 0 .5em $blue-focus;
+    border: 1px solid $blue-focus;
+  }
+
+  .inputinfo {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: $medium) {
+
+  .login-form {
+    border-right: 1px solid $grey-light;
+    border-left: 1px solid $grey-light;
+    padding: 0 4rem;
+
+    h2 {
+      margin: 3rem 0 5rem;
+    }
+  }
+}

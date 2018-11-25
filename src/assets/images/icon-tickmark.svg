@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>OK Tick Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="STA---Prod-Dev-Engineers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="10" sketch:type="MSArtboardGroup" transform="translate(-36.000000, -38.000000)">
+            <g id="NOTIFOCATIONS" sketch:type="MSLayerGroup" transform="translate(0.000000, -378.000000)">
+                <g id="OK-Tick-Copy" transform="translate(37.000000, 417.000000)" sketch:type="MSShapeGroup">
+                    <circle id="Oval-90" stroke="#ffffff" fill-opacity="0.01" fill="#FFFFFF" cx="30" cy="30" r="30"></circle>
+                    <path d="M44.1403121,24.1583805 C45.304183,22.9659433 45.2837785,21.0566971 44.094402,19.8893575 C43.5065493,19.3123191 42.7134276,18.9925811 41.8896991,19.0001307 C41.0657667,19.0078844 40.2787663,19.3425177 39.7017279,19.9301664 L24.6928128,35.2210714 L19.2125805,30.0536396 C18.6130972,29.4884358 17.8136501,29.1844092 16.9901258,29.2086905 C16.1666014,29.2327678 15.3865386,29.5833166 14.8213348,30.1825958 C13.6790926,31.3942132 13.7352049,33.301827 14.9462101,34.4436611 L22.7601015,41.8111027 C23.9600883,42.9425305 25.8454612,42.9033539 26.9972935,41.7231594 L44.1403121,24.1583805 Z" id="Tick" fill="#ffffff"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

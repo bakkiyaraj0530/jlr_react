@@ -1,0 +1,57 @@
+@import "../../styles/global";
+
+.process-header {
+  top: 3.5em;
+  height: 4em;
+  background-color: $white;
+  border-bottom: .2em solid $grey;
+  .back-image {
+    margin: .3em 1em 0 .75em;
+    float: left;
+  }
+
+  .content-part {
+    color: $black;
+    text-align: center;
+    margin: .7em 1em 0 0;
+    font-size: $font-md;
+    float: left;
+  }
+
+  .process-help-icon {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.back-icon {
+  float: left;
+  width: 2em;
+  margin: .75em 1em 0 .75em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .process-header {
+    height: 3.5em;
+    border-bottom: .06em solid $grey;
+    .back-image {
+      margin: 0;
+    }
+    .content-part {
+      text-align: center;
+      margin: 0.5 0 0 2em;
+      font-size: 1em;
+      font-family: LR-demi;
+    }
+  }
+
+  .back-icon {
+    float: left;
+    width: 1.5em;
+    margin: 1em 0 0 .55em;
+  }
+}

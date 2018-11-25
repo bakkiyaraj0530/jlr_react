@@ -1,0 +1,13 @@
+/* JLR fonts */
+@font-face {
+  font-family: "LR-bold";
+  src: url('../assets/fonts/JLREmericWeb-SemiBold.woff') format("truetype");
+}
+@font-face {
+  font-family: "LR-demi";
+  src: url('../assets/fonts/JLREmericWeb-Regular.woff') format("truetype");
+}
+@font-face {
+  font-family: "LR-light";
+  src: url('../assets/fonts/JLREmericWeb-ExtraLight.woff') format("truetype");
+}

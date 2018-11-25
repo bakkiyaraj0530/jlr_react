@@ -1,0 +1,2 @@
+export const CONNECTION_STATUS = 'CONNECTION_STATUS';
+export const START_DB = 'START_DB';

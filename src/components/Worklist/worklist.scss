@@ -1,0 +1,414 @@
+@import '../../styles/global';
+
+.message-bar {
+  height: 3em;
+  margin-top: 3.5em;
+  padding-left: 1em;
+  line-height: 3em;
+  text-align: left;
+  color: $white;
+  background-color: $green;
+  display: none;
+}
+
+.worklist-container {
+  margin-top: 4em;
+  font-family: LR-demi;
+
+  .filter-container {
+
+    .filter-text-container {
+
+      .filter-text {
+        @include truncate(100%);
+        font-size: 1em;
+        padding: 0 2%;
+        margin: 0;
+      }
+
+      &:focus {
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    .filter-select-container {
+      margin: .7em 0;
+    }
+
+    select.filter-select {
+      @include truncate(100%);
+      margin-top: .3em;
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+
+    .filter-button,
+    .new-button,
+    .filter-reset-button {
+      @include esdButton(100%, .65em, 0, $black, $black);
+      color: $white;
+      font-size: 1em;
+      margin-bottom: .3em;
+      margin-top: 0;
+      font-weight: bold;
+      letter-spacing: .05em;
+    }
+
+    .search-button {
+      @include esdButton(100%, .65em, 0, $grey-dark, $black);
+      color: $white;
+      font-size: 1em;
+      margin-bottom: .3em;
+    }
+
+    .new-button {
+      display: block;
+      width: 100%;
+      padding: .5em;
+    }
+
+    .errorMessage {
+      color: $red;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .search-container {
+    border: 1px solid $grey-light;
+    margin: 0 1.2em;
+
+    .search-content {
+      padding: 1.5em;
+    }
+
+    .search-header {
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      font-size: $font-sm;
+      padding: .8em 0;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        background: url('../../assets/images/icon-search-black.svg');
+        background-size: 100% 100%;
+        vertical-align: middle;
+        margin-right: .2em;
+      }
+
+      &::after {
+        content: '';
+        width: .9em;
+        height: .9em;
+        display: inline-block;
+        background: url('../../assets/images/icon-search-expand.svg');
+        background-size: 100% 100%;
+        margin-right: 1.3em;
+        margin-top: .3em;
+      }
+    }
+
+    .search-close-header {
+
+      &::after {
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+    }
+
+    .search-open-header {
+
+      &::after {
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
+    }
+
+    .search-text {
+      @include truncate(96%);
+      font-size: 1em;
+      padding: 0 2%;
+      margin: .1em 0 .8em;
+    }
+
+    .search-date {
+      @include truncate(96%);
+      font-size: 1.2em;
+      padding: 0 1%;
+      margin: .1em 0 .8em;
+    }
+
+    .search-select-container {
+
+      .search-select {
+        @include truncate(96%);
+        font-size: 1em;
+      }
+    }
+  }
+
+  .worklist-content {
+    padding-bottom: 2em;
+
+    .worklist-table-header {
+      display: none;
+    }
+
+    .worklist-row {
+      padding-bottom: 1.5em;
+
+      .worklist-item {
+        border-bottom: 1px dotted $grey;
+        padding: .7em 0;
+        font-size: .8em;
+        float: none;
+        width: 100%;
+        font-family: LR-demi;
+
+        &::after {
+          @extend %clear-fix;
+        }
+
+        > div {
+          @include layoutCol(2, 5%, 0);
+        }
+
+        .worklist-item-label {
+          color: $black;
+          vertical-align: middle;
+        }
+
+        .worklist-item-value {
+          color: $black;
+          vertical-align: middle;
+        }
+      }
+
+      .worklist-more-button {
+        font-family: LR-bold;
+        padding-left: 5%;
+        padding-top: 1em;
+        cursor: pointer;
+      }
+
+      .worklist-view {
+        @include esdButton(100%, .3em, 0, $white, $black);
+        margin-top: .75em;
+        font-family: LR-demi;
+        font-size: .8em;
+      }
+    }
+
+    .progress-bar {
+      position: relative;
+      top: 0.2em;
+      padding: 0;
+      border: 0;
+      width: 98px;
+      height: 1em;
+      background-color: $grey;
+      border-radius: 0.2em;
+
+      .worklist__data__progress.completed {
+
+        div {
+          background-color: $green-dark;
+        }
+      }
+
+      .worklist__data__progress {
+
+        div {
+          height: 1em;
+          background-color: $green;
+          border-radius: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  .worklist-container {
+
+    .filter-container {
+
+      .filter-text-container {
+        width: 23%;
+        float: left;
+        margin-right: .5em;
+      }
+
+      .filter-select-container {
+        width: 15%;
+        float: left;
+        margin: 0 2em 0 0;
+
+        select {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .order-by-select-container {
+        display: none;
+      }
+
+      .filter-button {
+        width: 6%;
+        margin-right: 1em;
+      }
+
+      .filter-reset-button {
+        width: 15%;
+      }
+
+      .new-button {
+        width: 8%;
+        float: right;
+      }
+    }
+
+    .search-container {
+      border: 1px solid $grey-light;
+      width: 90%;
+      margin: auto;
+
+      .search-header {
+        background: $white;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 1.5em;
+          height: 1.5em;
+          background: url('../../assets/images/icon-search.svg');
+          background-size: 100% 100%;
+          vertical-align: middle;
+          margin-right: 0.2em;
+        }
+
+        &::after {
+          position: absolute;
+          margin-left: 0.25em;
+        }
+      }
+    }
+
+    .worklist-content {
+      display: table;
+
+      .worklist-table-header {
+        display: table-header-group;
+        color: $black;
+        font-family: LR-bold;
+        font-size: .8em;
+
+        &::after {
+          clear: both;
+          content: '';
+          display: block;
+        }
+
+        .worklist-table-header-item {
+          @include layoutColWidth(10%, 0, 0);
+          display: table-cell;
+          padding: 0.5em;
+          border: 1px solid $grey-light;
+          border-right-width: 0;
+
+          div {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .worklist-table-view {
+          border: 1px solid $grey-light;
+        }
+      }
+
+      .worklist-row {
+        font-family: LR-light;
+        padding: 0;
+        display: table-row;
+
+        .worklist-item {
+          @include layoutColWidth(10%, 0, 0);
+          display: table-cell;
+          border-bottom: 1px solid $grey-light;
+          border-left: 1px solid $grey-light;
+          padding: .5em;
+          text-align: center;
+
+          .worklist-item-label {
+            display: none;
+          }
+
+          .worklist-item-value {
+            width: 100%;
+            padding: 0;
+          }
+        }
+
+        .worklist-view {
+          border: 1px solid $grey-light;
+          border-top-width: 0;
+          margin: 0;
+          text-decoration: underline;
+        }
+
+        .worklist-more-button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .worklist-content {
+    .filter-container {
+      .worklist-row {
+        .worklist-view {
+          color: $black;
+          font-family: LR-demi;
+        }
+      }
+
+      .new-button {
+        font-family: LR-bold;
+        display: inline-block;
+        text-align: center;
+        font-size: $font-xsm;
+      }
+    }
+  }
+}
+
+@keyframes searchOpenAnimation {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes searchCloseAnimation {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}

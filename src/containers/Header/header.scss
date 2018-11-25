@@ -1,0 +1,81 @@
+@import '../../styles/global';
+
+.header__container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.center-header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: $black;
+  color: $white;
+  padding: 1em 0;
+  font-family: LR-light;
+  height: 3.5em;
+  &::after {
+    @extend %clear-fix;
+  }
+
+  .header-left-container {
+    float: left;
+    height: 1.5em;
+    .back-text {
+      font-size: 1em;
+      padding-bottom: .2em;
+    }
+    .header-text {
+      font-size: 1em;
+    }
+  }
+
+  .header-right-container {
+    position: relative;
+    top: -0.1em;
+    float: right;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .header-home {
+      display: inline-block;
+      margin-right: 2.5em;
+      color: $white;
+    }
+
+    .header-menu {
+      width: 2em;
+      cursor: pointer;
+    }
+    img:not(:last-child) {
+      margin-right: 2em;
+    }
+  }
+}
+
+.site-header {
+  .numberErrors {
+    background-color: $green-dark;
+    font-family: LR-bold;
+    color: $white;
+    font-size: 0.8em;
+    border-radius: 0.8em;
+    text-align: center;
+    min-width: 1.6em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: center;
+    height: 1.6em;
+    position: absolute;
+    top: 0.9em;
+    right: 6.5em;
+    padding-top: 0.15em;
+  }
+}
+

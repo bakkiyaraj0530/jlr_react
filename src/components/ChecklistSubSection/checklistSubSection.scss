@@ -1,0 +1,82 @@
+@import "../../styles/global";
+
+.checklist-item {
+  margin: 1em 2.5em;
+  border-bottom: .1em dotted $grey;
+  float: left;
+  color: #8c8c8c;
+  font-size: 1.17em;
+  font-weight: bold;
+
+  .sub-section-progressbar {
+    border-bottom: 7px solid $green;
+    clear: both;
+    margin-top: 2em;
+  }
+}
+
+.checklist-header {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: $x-small) and (max-width: 767px) {
+  .checklist-item {
+    margin: 0.5em 1em;
+    border-bottom: .1em dotted $grey;
+    width: 90%;
+    clear: both;
+    font-weight: normal;
+    text-align: left;
+
+    .content-partName {
+      font-size: 0.9em;
+      padding-top: 0.5em;
+      width: 73%;
+    }
+
+    .section-name,
+    .section-nameque {
+      font-size: 1.17em;
+      vertical-align: middle;
+      font-weight: normal;
+      width: 10%;
+      margin: 0.25em;
+    }
+
+    .section-nameque {
+      margin: 0 1.563em 0 0;
+      padding-top: 2%;
+    }
+
+    .section-complete {
+      margin: 0;
+    }
+
+    .sub-section-progressbar {
+      border-bottom: 5px solid $green;
+      margin-top: 0;
+    }
+
+    .list-chev img,
+    .list-chevque img {
+      padding-top: 0.7em;
+      width: 1%;
+    }
+
+    .list-chevque {
+      padding-top: 1.6em;
+    }
+
+    img {
+      float: right;
+      width: 0.7em;
+      padding: 0;
+    }
+
+  }
+
+}

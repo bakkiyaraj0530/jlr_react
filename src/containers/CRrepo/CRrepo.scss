@@ -1,0 +1,214 @@
+@import '../../styles/global';
+
+.main-Crinfo {
+  text-align: center;
+
+  .errorMessage {
+    background: $red-error;
+    color: $white;
+    padding: 0.5em;
+  }
+
+  .back-Data {
+    float: left;
+  }
+
+  .set-number {
+    width: 40%;
+    margin: auto;
+  }
+
+  .next-Data {
+    float: right;
+  }
+
+  .qinactive {
+    color: $blue-light;
+  }
+
+  .qactive {
+    color: $white;
+  }
+
+  .back-adjust {
+    width: 50%;
+    margin: auto;
+  }
+
+  button {
+    background-color: $grey;
+    color: $black;
+    width: 9em;
+    margin-right: 0.625em;
+    padding: 0.563em;
+  }
+
+  .back-NextDiv {
+    background-color: $grey-mid;
+    padding: 0.75em;
+    color: $white;
+    margin-top: 0;
+    img {
+      width: 0.7em;
+      vertical-align: middle;
+    }
+  }
+}
+
+.questionin-focss {
+  font-size: 1.5em;
+  margin-top: 1.25em;
+}
+
+hr {
+  margin-top: 3%;
+  border-top: 1px dotted $grey;
+  width: 80%;
+}
+
+div .button-sample,
+div .button-sample1 {
+  margin-top: 3%;
+  padding-bottom: 3%;
+
+  .YesAns:hover,
+  .YesAns-select {
+    background-color: $blue-mid;
+    color: $white;
+  }
+
+  .NoAns:hover,
+  .NoAns-select {
+    background-color: $blue-mid;
+    color: $white;
+  }
+
+}
+
+.attachment-Btn {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  margin-bottom: 0;
+  font-size: 1.17em;
+  line-height: 1.25em;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: $light-black;
+  img {
+    height: 4em;
+  }
+}
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 0.625em;
+}
+
+input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 8.125em;
+}
+
+.cr-textarea {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+
+  .textarea-style {
+    width: 55%;
+    margin: auto;
+  }
+
+  label {
+    width: 55% !important;
+    margin: auto;
+    color: $grey-mid;
+  }
+}
+
+@media only screen and (min-width: $medium) and (max-width: 800px) {
+
+  .score-icon1 {
+    margin-left: 2em;
+  }
+
+  .cr-textarea {
+    width: 80%;
+
+    .textarea-style {
+      width: 60% !important;
+    }
+
+    label {
+      width: 60% !important;
+      margin: auto;
+      color: $grey-mid;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .main-Crinfo {
+
+    button {
+      width: 7em;
+    }
+
+    .back-Data {
+      float: left;
+      margin: 0;
+    }
+
+    .next-Data {
+      float: right;
+      margin: 0;
+    }
+
+    .set-number {
+      text-align: center;
+    }
+  }
+
+  .back-adjust {
+    width: 100% !important;
+  }
+
+  .questionin-focss {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: left;
+    margin: 1em;
+  }
+
+  .cr-textarea {
+    width: 80%;
+
+    .textarea-style {
+      width: 80%;
+    }
+
+    label {
+      width: 80% !important;
+      margin: auto;
+      color: $grey-mid;
+    }
+    text-align: left;
+  }
+
+  .score-info {
+    width: 9%;
+    float: left;
+    margin-right: 1.875em;
+  }
+}

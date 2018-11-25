@@ -1,0 +1,59 @@
+@import '../../../styles/global';
+
+.text-input-label {
+  color: $grey;
+}
+
+.second-label {
+  font-style: italic;
+  color: $grey;
+}
+
+.select-style {
+  left: 0 !important;
+  height: 2.2em;
+  font-size: 1em;
+  border: 1px solid $grey !important;
+  padding: 0 .5%;
+  margin-top: .3em;
+  margin-bottom: 1.5em;
+}
+
+.input-disabled {
+  border-color: transparent !important;
+  height: 2.2em;
+  color: $black;
+}
+
+label.serverErrorMsg {
+  font-size: 1em;
+  padding: .34em .5em;
+  background-color: $red;
+  color: $white;
+}
+
+select.serverError {
+  margin-right: .5em;
+}
+
+.serverError {
+  left: 0 !important;
+  border: 3px solid $red !important;
+}
+
+.serverErrorTextarea {
+  height: 4.5em;
+  border: 3px solid $red !important;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.label-header {
+  color: $grey;
+}
+
+.option-text {
+  @include truncate(100%);
+  font-size: 1em;
+  padding: 0%;
+}

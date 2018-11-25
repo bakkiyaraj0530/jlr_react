@@ -1,0 +1,108 @@
+@import '../../styles/global';
+
+.health-mainbody {
+  margin-top: 3%;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+
+  .header-cont {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: $black;
+    padding: 1em 0;
+    height: 1.7em;
+  }
+
+  button {
+    color: $white;
+    background-color: $grey-dark;
+    height: 50px;
+    font-size: 1.33em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .health-safety {
+    font-size: 1.5em;
+    color: $black;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+  }
+
+  .health-context {
+    font-size: 1.5em;
+    color: $grey-mid;
+    margin-top: 2%;
+  }
+
+  img.add-symbol {
+    width: 3em;
+    height: 2em;
+  }
+
+  .health-tips {
+    margin-top: 5%;
+
+    hr {
+      border-bottom: 0;
+    }
+
+    ul {
+      width: 73%;
+      text-align: center;
+      display: inline-block;
+
+      li {
+        padding: 0 0 0.625em 0.188em;
+        text-align: left;
+        list-style-type: disc;
+      }
+    }
+
+    ul.health-red {
+      color: $red-error;
+    }
+
+    ul.health-green {
+      color: $green;
+    }
+
+    .health-wrong {
+      margin-bottom: 16%;
+    }
+
+    .health-right,
+    .health-wrong {
+      width: 100%;
+
+      .health-always,
+      .health-never {
+        font-size: 1.33em;
+        font-weight: 700;
+        color: $green;
+        margin-top: 0;
+
+        img {
+          vertical-align: middle;
+          height: 1.875em;
+          width: 1.5em;
+          margin-right: 0.625em;
+        }
+      }
+
+      .health-always {
+        color: $green;
+      }
+
+      .health-never {
+        color: $red-error;
+      }
+    }
+  }
+}
+

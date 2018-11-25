@@ -1,0 +1,23 @@
+@import "../../styles/global";
+
+.form-button {
+  margin-top: 1em;
+  padding: 1em 1.7em;
+  font-size: 1.125em;
+  background: $black;
+  color: $white;
+  font-family: LR-light;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    color: $grey-dark;
+    background: $grey-light;
+  }
+}
+
+@media screen and (max-width: medium) {
+  .form-button {
+    margin-top: 6em;
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../styles/global';
+
+.preview {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: rgba($grey-1, 0.95);
+
+  .preview-container {
+    width: 100%;
+    height: 100%;
+
+    .preview-header {
+      background: $white;
+      height: 10%;
+      padding: 1em 0;
+
+      .preview-close {
+        width: 2em;
+        margin-left: 1em;
+      }
+    }
+
+    .preview-content {
+      position: relative;
+      height: 93%;
+      width: 100%;
+
+      .image-delete {
+        @include esdButton(90%, 1em, 1em, $white, transparent);
+        position: absolute;
+        bottom: 2em;
+        left: 5%;
+
+        &::before {
+          background: url('../../assets/images/icon-button-red-x.svg') no-repeat center center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium) {
+  .preview {
+    .preview-container {
+      width: 40%;
+      height: 90%;
+      margin: 0 auto;
+      border: 1px solid $white;
+    }
+  }
+}

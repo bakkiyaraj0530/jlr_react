@@ -1,0 +1,120 @@
+@import "../../styles/global";
+
+.checklist-item {
+
+  .content-partName {
+    color: $black;
+    float: left;
+    padding-top: 1.5em;
+    width: 60%;
+    text-align: left;
+  }
+
+  .section-name,
+  .section-nameque {
+    font-size: 3em;
+    margin-right: 0.5em;
+    float: left;
+    width: 20%;
+    display: block;
+  }
+
+  .section-nameque {
+    font-size: 1.2em;
+    padding-top: 10%;
+  }
+
+  .section-progressbar,
+  .section-progressbar-cr {
+    border-bottom: 7px solid $green;
+    margin-top: 7em;
+    clear: both;
+  }
+
+  .section-progressbar-cr {
+    border-bottom: 7px solid $grey-bg;
+  }
+
+  .section-complete {
+    width: 15%;
+    float: left;
+    display: block;
+    margin-top: 1em;
+  }
+
+  .list-chev,
+  .list-chevque {
+    width: 1em;
+    float: right;
+    padding-top: 9%;
+  }
+
+  .list-chevque {
+    padding-top: 15%;
+  }
+}
+
+.checklist-header {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.checklist-type {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.other-notproceed {
+
+  .content-partName {
+    color: $grey-mid;
+  }
+
+  .section-name {
+    color: $grey-mid;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+li:first-child {
+  .content-partName {
+    color: $black;
+    margin-left: 0.8em;
+  }
+
+  .section-name {
+    visibility: hidden;
+  }
+
+  img {
+    display: inline-block;
+  }
+}
+
+.quest-content .unorderlist {
+  text-align: center;
+  margin-top: 4%;
+}
+
+@media only screen and (min-width: $x-small) and (max-width: 767px) {
+
+  .quest-content .section-progressbar,
+  .quest-content .section-progressbar-cr {
+    border-bottom: 5px solid $green;
+    margin: 0 0.3em;
+  }
+
+  .quest-content .section-progressbar-cr {
+    border-bottom: 5px solid $grey-bg;
+  }
+
+  li:first-child .content-partName {
+
+    margin: 0;
+  }
+}

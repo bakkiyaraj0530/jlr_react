@@ -1,0 +1,4 @@
+export const MODAL_BLOCK_ON = 'MODAL_BLOCK_ON';
+export const MODAL_BLOCK_OFF = 'MODAL_BLOCK_OFF';
+export const MODAL_OFFLINE_OFF = 'MODAL_OFFLINE_OFF';
+export const MODAL_OFFLINE_ON = 'MODAL_OFFLINE_ON';

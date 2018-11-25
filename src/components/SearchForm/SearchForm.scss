@@ -1,0 +1,32 @@
+@import '../../styles/global';
+
+.worklistView {
+  @include esdButton(100%, 0.3em, 0, $white, $black);
+  text-transform: uppercase;
+  margin-top: 0.75em;
+}
+
+.search-button-container {
+  text-align: center;
+  margin-top: 2.5em;
+  font-size: .8em;
+  height: 3em;
+
+  .form-button-clear {
+    cursor: pointer;
+    background: $black;
+    border: 1px solid $black;
+    padding: 1em 3em;
+    color: $white;
+    font-weight: bold;
+    letter-spacing: .05em;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  button {
+    margin: -0.5em;
+  }
+}

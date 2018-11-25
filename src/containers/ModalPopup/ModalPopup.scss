@@ -1,0 +1,112 @@
+@import '../../styles/global';
+
+.ReactModal__Content {
+  border: none !important;
+}
+
+.modelMain {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  width: 50%;
+  height: 17em;
+  transform: translate(-50%, -50%);
+  borderradius: 0;
+  padding: 2.5em;
+}
+
+.modalContent {
+  background: $white;
+  border: none;
+  text-align: center;
+  .modalicon {
+    width: 5em;
+  }
+  .modalTitle,
+  .modalConfirmTitle {
+    text-align: center;
+    font-size: 22px;
+  }
+  .modalTitle {
+    margin-top: 2em;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+  .modalConfirmButtonContainer {
+    margin-top: 4em;
+    &.modalDelegateButtonContainer {
+      display: block;
+    }
+    .modalConfirmButton {
+      display: inline-block;
+      border: 1px solid $grey-mid;
+      margin: 0 .6em;
+      width: 9em;
+      text-align: center;
+      color: $black;
+      background: $grey-light;
+      padding: .9em 1em;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      cursor: pointer;
+    }
+    .modalCancel,
+    .modalConfirm {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: bottom;
+        margin-right: 10px;
+      }
+    }
+    .modalCancel {
+      &::before {
+        background: url(../../assets/images/icon-button-red-x.svg) no-repeat center center;
+        background-size: cover;
+      }
+    }
+    .modalConfirm {
+      &::before {
+        background: url(../../assets/images/icon-button-green-tick.svg) no-repeat center center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $x-small) {
+  .modelMain {
+    width: 100%;
+    height: 25em;
+    border: 1px solid red;
+  }
+
+  .modalContent {
+    .modalTitle,
+    .modalConfirmTitle {
+      font-size: 18px;
+      margin-top: 2em;
+    }
+    .modalConfirmButtonContainer {
+      .modalConfirm {
+        &::before {
+          margin: 0 0 .7em;
+        }
+      }
+      .modalCancel {
+        &::before {
+          margin: 0 0 .7em;
+        }
+      }
+      .modalConfirmButton {
+        padding: .9em 1em;
+        width: 6em;
+        display: block;
+        margin: 1em auto;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

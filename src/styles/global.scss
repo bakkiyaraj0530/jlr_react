@@ -1,0 +1,302 @@
+// colours
+$black: #1e1e1e;
+$white: #ffffff;
+$red: #b30838;
+$green: #005a2b;
+$red-error: #9e1b32;
+
+/* buttons and text black */
+$grey-dark: #525252;
+$grey-mid: #8c8c8c;
+$grey: #c4c4c4;
+$grey-light: #ebebeb;
+$grey-bg: #f7f7f7;
+$brown-dark: #6c4646;
+$brown-mid: #bd845b;
+$brown: #c5ad7e;
+$brown-light: #e2d5be;
+$blue-dark: #40465c;
+$blue-mid: #5b788f;
+$blue: #95adac;
+$blue-focus: #51cbee;
+$blue-light: #cdd7d9;
+$green-dark: #005a2b;
+$light-black: #333333;
+$grey-1: #525252;
+$red-1: #f00;
+
+/* font sizes */
+
+// 18pt or 24px
+$font-xsm: 1.1em;
+
+// 30pt or 40px
+$font-sm: 1.2em;
+
+// 36pt or 48px
+$font-md: 1.5em;
+
+// 48pt or 64px
+$font-lg: 4em;
+
+// 64pt or 84.333px
+$font-xlg: 5.275em;
+
+// breakpoints
+$x-small: 20em;
+$small: 24em;
+$medium: 48em;
+$large: 64em;
+
+// spaces
+.spacer3 {
+  height: 3rem;
+}
+
+// reset
+html {
+  font-size: 100%;
+  height: auto;
+}
+
+body {
+  font-family: LR-demi;
+  background-color: $white;
+  margin: 0;
+  overflow-y: auto;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#app > div {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// placeholders
+%clear-fix {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+%inline-elem {
+  display: inline-block;
+}
+// Mixins
+@mixin truncate($width) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin layoutColWidth($width, $padding-left, $padding-right) {
+  @extend %inline-elem;
+  width: $width - $padding-left - $padding-right;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin layoutCol($cols, $padding-left, $padding-right) {
+  @extend %inline-elem;
+  width: 100% / $cols - $padding-left - $padding-right;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+@mixin esdButton($width, $padding-top, $padding-left, $bg, $border) {
+  width: $width;
+  padding: $padding-top $padding-left;
+  background: $bg;
+  border: 1px solid $border;
+  color: $black;
+  font-family: LR-light;
+  font-size: $font-sm;
+  text-align: center;
+
+  span {
+    vertical-align: text-top;
+  }
+}
+
+@mixin esdInput($width, $border, $bg) {
+  width: $width;
+  border: 1px solid $border;
+  background: $bg;
+}
+
+@mixin borderRadius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+// global styles
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+
+.quest-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $grey-bg;
+
+  .quest-content {
+    padding-top: 7.5em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-family: LR-light;
+    font-size: 1em;
+
+    li {
+      .list-chevron {
+        width: 3em;
+        height: 4em;
+      }
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}
+
+.fixed-header {
+  position: fixed;
+  z-index: 100;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.show-div {
+  display: block;
+}
+
+.hide-div {
+  display: none;
+}
+
+.form-label {
+  color: $black;
+  font-family: LR-demi;
+  font-size: 1em;
+}
+
+.form-input {
+  @include esdInput(100%, $grey-light, $white);
+}
+
+.form-button {
+  @include esdButton(100%, 0.7em, 0, $grey-dark, $black);
+  color: $white;
+  margin: 0;
+}
+
+.form-button-icon {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+}
+
+.help-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: sub;
+  cursor: pointer;
+}
+
+.fullWidth {
+  width: 100%;
+  z-index: 50;
+}
+
+.list_item {
+  border-bottom: .1em solid $grey-light;
+  a {
+    line-height: 3em;
+    color: $black;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+}
+
+.vertical-center-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.middle-align {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+//placeholder styling
+::-webkit-input-placeholder {
+  color: $black;
+}
+
+:-moz-placeholder {
+  color: $black;
+}
+
+/* Firefox 18- */
+
+::-moz-placeholder {
+  color: $black;
+}
+
+/* Firefox 19+ */
+
+:-ms-input-placeholder {
+  color: $black;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear,
+input[type=text]::-ms-reveal,
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+::-ms-reveal,
+::-ms-clear {
+  display: none;
+}

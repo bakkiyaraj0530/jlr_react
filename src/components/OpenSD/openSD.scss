@@ -1,0 +1,132 @@
+@import '../../styles/global';
+
+.open-sd-container {
+  margin-top: 8em;
+
+  .sd-content {
+    &::after {
+      @extend %clear-fix;
+    }
+  }
+
+  .create-sd-button-container {
+    position: relative;
+
+    .complete-btn {
+      background-color: $black;
+      color: $white;
+    }
+
+    .complete-tick {
+      width: 1.5em;
+      margin-right: .5em;
+    }
+
+    .complete-exclamation {
+      width: .5em;
+      margin-right: .5em;
+    }
+
+    .form-button {
+      margin-bottom: .7em !important;
+      background: $black;
+    }
+
+  }
+
+  .clearinfo {
+    clear: both;
+  }
+
+  .errorMessage {
+    background: $red-error;
+    color: $white;
+    padding: .5em;
+    margin-top: -2em;
+  }
+
+  input[type=date] {
+    left: 0 !important;
+    height: 2.2em;
+    font-size: 1em;
+    border: 1px solid $grey !important;
+    padding: 0 2%;
+    margin-top: .3em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  .react-datepicker__input-container {
+    display: block;
+  }
+  .option-text {
+    @include truncate(100%);
+    font-size: 1em;
+    padding: 0% 3% 0% 1%;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .open-sd-container {
+    position: relative;
+
+    .create-sd-button-container {
+      bottom: 0;
+      width: 100%;
+      border-top: 2px solid $grey;
+      font-size: .8em;
+      height: 3em;
+
+      &::after {
+        clear: both;
+        content: '';
+        display: block;
+      }
+
+      .start-sd-button {
+        margin-right: 2em;
+      }
+
+      .download-sd-button {
+        margin-right: 1em;
+      }
+    }
+
+    .form-button {
+      @include esdButton(18%, 0.7em, 0, $grey, $grey);
+      float: right;
+      margin-right: 4em;
+      font-family: LR-demi;
+      background: $black;
+      color: $white;
+    }
+  }
+}
+
+@media screen and (min-width: $x-small) and (max-width: 440px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .open-sd-container {
+    .create-sd-button-container {
+      width: 90%;
+      margin: auto;
+
+      .complete-btn {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  .form-button {
+    @include esdButton(90%, 0, 0, $grey, $grey);
+    float: right;
+    margin-right: 4em;
+    font-family: LR-demi;
+    background: $black;
+    color: $white;
+  }
+}

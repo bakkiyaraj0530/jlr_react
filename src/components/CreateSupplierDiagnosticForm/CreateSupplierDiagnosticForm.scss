@@ -1,0 +1,151 @@
+@import '../../styles/global';
+
+.create-sd-button-container {
+  margin: auto;
+  border-top: 0 solid $grey-mid;
+  bottom: initial !important;
+
+  .sd-form-button {
+    @include esdButton(90%, 0, 0, $grey, $grey);
+    float: right;
+    background: $black;
+    margin: 0.6em;
+    padding: 0.6em;
+    font-family: LR-demi;
+    span {
+      color: $white;
+    }
+  }
+
+  img {
+    width: 7%;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+}
+
+.create-sd-container {
+  padding: 5em 0 0;
+
+  .create-sd-button {
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+    padding: 0.8em;
+  }
+
+  .fancy span::before,
+  .fancy span::after {
+    border-bottom: 0 dotted $grey;
+    border-top: 0 dotted $grey;
+    width: 0%;
+  }
+
+  .fancy span::before {
+    right: 0%;
+  }
+
+  .fancy span::after {
+    left: 0%;
+  }
+
+  .errorMessage {
+    background: $red-error;
+    color: $white;
+    padding: .5em;
+    margin-top: -1em;
+  }
+
+  .hideBlock {
+    display: none;
+  }
+
+  .showBlock {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $medium) {
+
+  .create-sd-container {
+    padding: 5em 0 0;
+
+    .assessmentHeading {
+      text-align: center;
+      font-size: $font-xsm;
+      padding-top: 1.6em;
+      line-height: 0.3;
+    }
+
+    .fancy span {
+      display: inline-block;
+      position: relative;
+      color: $black;
+    }
+
+    .fancy span::before,
+    .fancy span::after {
+      content: "";
+      position: absolute;
+      height: 0.313em;
+      border-bottom: 0.125em dotted $grey !important;
+      border-top: 0.125em dotted $grey !important;
+      top: 0;
+      width: 160%;
+    }
+
+    .fancy span::before {
+      right: 95%;
+      margin-right: 0.938em;
+      color: $black;
+    }
+
+    .fancy span::after {
+      left: 95%;
+      margin-left: 0.938em;
+      color: $black;
+    }
+
+    .create-sd-button-container {
+      padding: 1.5em 0 2em !important;
+      border-top: 0.125em solid $grey;
+      font-size: .8em;
+      height: 3em;
+
+      &::after {
+        clear: both;
+        content: '';
+        display: block;
+      }
+    }
+
+    .sd-form-button {
+      @include esdButton(18%, 0, 0, $grey, $grey);
+      background: $black;
+      float: right;
+      margin-right: 0;
+      padding: 0.6em;
+      font-family: LR-demi;
+      span {
+        color: $white;
+      }
+    }
+
+    input[type=date] {
+      text-transform: uppercase;
+    }
+
+    span {
+      color: $black;
+    }
+
+    .columnssd {
+      padding-left: 0;
+    }
+
+    .disable-btn {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+}

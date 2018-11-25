@@ -1,0 +1,40 @@
+@import '../../styles/global';
+
+.message-content {
+  color: $white;
+  padding: 1em;
+  font-family: LR-light;
+  &::after {
+    @extend %clear-fix;
+  }
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .message-close-icon {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    float: right;
+  }
+}
+
+.error-message {
+  background: $red;
+}
+
+.alert-message {
+  background: $brown-mid;
+}
+
+.success-message {
+  background: $green;
+}
+
+@media screen and (min-width: medium) {
+  .message-content {
+    padding: .5em 1em;
+  }
+}
